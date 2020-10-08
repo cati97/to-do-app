@@ -25,11 +25,17 @@ const App = () => {
         console.log(newTodos);
     }
 
+    const completeTodo = index => {
+        const newTodos = [...todos];
+        newTodos[index].isCompleted = true;
+        setTodos(newTodos);
+    }
+
   return (
       <div className="app">
         <h1>To Do List</h1>
           <TodoForm addTodo={addTodo}> </TodoForm>
-          <TodoList todos={todos}> </TodoList>
+          <TodoList todos={todos} completeTodo={completeTodo}> </TodoList>
       </div>
   );
 }

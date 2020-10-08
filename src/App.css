@@ -16,7 +16,7 @@
 
 .todo-list {
   background: lightgray;
-  width: 500px;
+  width: 600px;
   height: 600px;
   display: flex;
   justify-content: flex-start;
@@ -35,8 +35,9 @@
 }
 
 .add-btn {
-  padding: 8px;
+  padding: 8px 10px;
   margin: 5px;
+  border-radius: 5px;
 }
 
 .form {
@@ -48,7 +49,19 @@
 .todo {
   padding: 5px;
   margin: 5px;
-  width: 300px;
+  width: 500px;
   border-radius: 5px;
   background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.todo-text {
+  width: 400px;
+}
+
+.complete-btn {
+  border-radius: 5px;
+  padding: 5px;
 }
