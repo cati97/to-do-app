@@ -61,7 +61,13 @@
   width: 400px;
 }
 
-.complete-btn {
+.complete-btn, .remove-btn {
   border-radius: 5px;
   padding: 5px;
+  margin: 2px;
+}
+
+.remove-btn {
+  padding: 5px 10px;
+  font-weight: bold;
 }

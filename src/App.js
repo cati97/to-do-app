@@ -31,11 +31,17 @@ const App = () => {
         setTodos(newTodos);
     }
 
+    const removeTodo = index => {
+        const newTodos = [...todos];
+        newTodos.splice(index, 1);
+        setTodos(newTodos);
+    }
+
   return (
       <div className="app">
         <h1>To Do List</h1>
           <TodoForm addTodo={addTodo}> </TodoForm>
-          <TodoList todos={todos} completeTodo={completeTodo}> </TodoList>
+          <TodoList todos={todos} completeTodo={completeTodo} removeTodo={removeTodo}> </TodoList>
       </div>
   );
 }
