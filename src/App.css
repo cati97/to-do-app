@@ -13,3 +13,42 @@
   align-items: center;
   justify-content: center;
 }
+
+.todo-list {
+  background: lightgray;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 10px;
+
+}
+
+.input {
+  margin: 10px;
+  padding: 5px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.add-btn {
+  padding: 8px;
+  margin: 5px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  padding: 5px;
+  margin: 5px;
+  width: 300px;
+  border-radius: 5px;
+  background: grey;
+}

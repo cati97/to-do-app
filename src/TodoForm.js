@@ -12,15 +12,15 @@ const TodoForm = ({addTodo}) => {
     }
 
     return (
-        <div className={"form"}>
-            <form onSubmit={handleSubmit}>
+        <div>
+            <form className={"form"} onSubmit={handleSubmit}>
                 <input
                     type={"text"}
                     className={"input"}
                     value={value}
                     onChange={e => setValue(e.target.value)}
                 />
-                <button className={"add-bth"}>Add</button>
+                <button className={"add-btn"}>Add</button>
             </form>
         </div>
     )
