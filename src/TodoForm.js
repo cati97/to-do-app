@@ -6,6 +6,7 @@ const TodoForm = ({addTodo}) => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        if (!value) return;  // if nothing entered - do nothing
         addTodo(value);
         setValue("");
     }
